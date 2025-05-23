@@ -54,7 +54,10 @@ body {
       border-radius: 4px;
     }
     tr{
-      background-color: rgb(208, 89, 174);
+      background-color: rgb(175, 124, 138);
+    }
+    th{
+      background-color:  rgb(146, 169, 231) !important;
     }
 
    
