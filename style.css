@@ -1,7 +1,7 @@
 body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      border: 3px solid black;
+
       display: flex;
       flex-direction: column;
       height: 100vh;
