@@ -113,7 +113,7 @@
 
     const percentCell = row.cells[dates.length + 1];
     const percentage = ((presentCount / total) * 100).toFixed(0);
-    percentCell.textContent = `${percentage}%`;
+    percentCell.textContent = `${percentage}% (${presentCount} / ${total})`;
   }
 
   function renderStudent(name) {
@@ -126,7 +126,7 @@
       createInput(row.insertCell(), index);
     }
 
-    row.insertCell().textContent = "0%"; // Percentage cell
+    row.insertCell().textContent = "0% (0 / " + dates.length + ")"; // Percentage cell
 
     // Action Cell
     const actionCell = row.insertCell();
