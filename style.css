@@ -1,24 +1,40 @@
 body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      border: 3px solid black;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      text-align: center;
     }
     table {
       width: 100%;
-      border-collapse: collapse;
+      border: 3px solid black;
       text-align: center;
     }
     th, td {
-      border: 1px solid #999;
+
+      border: 1px solid #1f1c1c;
       padding: 10px;
     }
     .present {
-      background-color: #b2f7b2;
+      background-color: #2acd2a;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px;
     }
     .absent {
-      background-color: #f7b2b2;
+      background-color: #de0d0d;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px;
     }
     .late {
-      background-color: #fff7b2;
+      background-color: #e5d00e;
+      text-align: center;
+       border: 1px solid black;
+      border-radius: 20px;
     }
     input[type="text"] {
       padding: 6px;
@@ -37,8 +53,8 @@ body {
       cursor: pointer;
       border-radius: 4px;
     }
-    input[type="value"]{
-      text-align: center;
+    tr{
+      background-color: rgb(208, 89, 174);
     }
 
    
