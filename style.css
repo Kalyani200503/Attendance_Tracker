@@ -46,7 +46,7 @@ body {
       cursor: pointer;
     }
     .delete-btn {
-      background-color: #ff4d4d;
+      background-color: #663232;
       color: white;
       border: none;
       padding: 5px 8px;
@@ -54,7 +54,7 @@ body {
       border-radius: 4px;
     }
     tr{
-      background-color: rgb(208, 89, 174);
+      background-color: rgb(246, 246, 248);
     }
 
    
