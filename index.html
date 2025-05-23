@@ -20,10 +20,14 @@
   <thead>
     <tr id="row">
       <th>List of Students</th>
-      <th>22/05/2025</th>
+    
       <th>23/05/2025</th>
       <th>24/05/2025</th>
       <th>25/05/2025</th>
+      <th>26/05/2025</th>
+      <th>27/05/2025</th>
+     
+      
       <th>Monthly %</th>
       <th>Action</th>
     </tr>
@@ -35,7 +39,7 @@
 
 <script>
   const students = ["kalyani", "Rubina", "Vyshnavi", "Chetana","Pranitha","Tejaswini","Pooja"];
-  const dates = ["Date 1", "Date 2", "Date 3", "Date 4"];
+  const dates = ["Date 1", "Date 2", "Date 3", "Date 4","Date 5"];
   const tableBody = document.getElementById("tableBody");
 
   function createInput(cell, studentIndex) {
@@ -74,7 +78,7 @@
 
     const percentCell = row.cells[dates.length + 1];
     const percentage = ((presentCount / total) * 100).toFixed(0);
-    percentCell.textContent = `${percentage}%`;
+    percentCell.textContent = `${percentage}% (${presentCount} / ${total})`;
   }
 
   function renderStudent(name) {
@@ -87,7 +91,7 @@
       createInput(row.insertCell(), index);
     }
 
-    row.insertCell().textContent = "0%"; // Percentage cell
+    row.insertCell().textContent = "0% (0 / " + dates.length + ")"; // Percentage cell
 
     // Action Cell
     const actionCell = row.insertCell();
