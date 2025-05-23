@@ -23,6 +23,7 @@ body {
     input[type="text"] {
       padding: 6px;
       margin-right: 8px;
+     
     }
     button {
       padding: 6px 12px;
@@ -36,3 +37,8 @@ body {
       cursor: pointer;
       border-radius: 4px;
     }
+    input[type="value"]{
+      text-align: center;
+    }
+
+   
