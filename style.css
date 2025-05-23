@@ -10,8 +10,9 @@ body {
     }
     table {
       width: 100%;
-      border: 3px solid black;
+      border: 5px solid black;
       text-align: center;
+      border-radius: 5px;
     }
     th, td {
 
@@ -54,10 +55,10 @@ body {
       border-radius: 4px;
     }
     tr{
-      background-color: rgb(175, 124, 138);
+      background-color: rgb(103, 166, 186);
     }
     th{
-      background-color:  rgb(146, 169, 231) !important;
+      background-color:  rgb(41, 89, 222) !important;
     }
 
    
