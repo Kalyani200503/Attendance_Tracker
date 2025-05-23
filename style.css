@@ -1,7 +1,7 @@
 body {
       font-family: Arial, sans-serif;
       padding: 20px;
-      border: 3px solid black;
+
       display: flex;
       flex-direction: column;
       height: 100vh;
@@ -10,8 +10,9 @@ body {
     }
     table {
       width: 100%;
-      border: 3px solid black;
+      border: 5px solid black;
       text-align: center;
+      border-radius: 5px;
     }
     th, td {
 
@@ -54,7 +55,14 @@ body {
       border-radius: 4px;
     }
     tr{
+<<<<<<< HEAD
       background-color: rgb(246, 246, 248);
+=======
+      background-color: rgb(103, 166, 186);
+    }
+    th{
+      background-color:  rgb(41, 89, 222) !important;
+>>>>>>> 4a55d453700c60a9c19a32f31fa91c223374097d
     }
 
    

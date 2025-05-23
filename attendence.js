@@ -15,7 +15,7 @@
       input.className = "";
       if (value === "P") input.classList.add("present");
       else if (value === "A") input.classList.add("absent");
-      else if (value === "Y") input.classList.add("late");
+      else if (value === "L") input.classList.add("late");
 
       calculatePercentage(studentIndex);
     });
@@ -31,7 +31,7 @@
       const input = row.cells[i].querySelector("input");
       if (input) {
         const val = input.value.toUpperCase();
-        if (val === "P" || val === "Y") {
+        if (val === "P" || val === "L") {
           presentCount++;
         }
       }
