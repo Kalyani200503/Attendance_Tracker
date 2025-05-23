@@ -1,45 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Attendance Tracker</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<h2>Attendance Tracker</h2>
-
-<!-- Add Student Form -->
-<div style="margin-bottom: 20px;">
-  <input type="text" id="studentNameInput" placeholder="Enter student name" />
-  <button onclick="addStudent()">Add Student</button>
-</div>
-
-<!-- Attendance Table -->
-<table id="attendanceTable">
-  <thead>
-    <tr>
-      <th>List of Students</th>
-    
-      <th>23/05/2025</th>
-      <th>24/05/2025</th>
-      <th>25/05/2025</th>
-      <th>26/05/2025</th>
-      <th>27/05/2025</th>
-     
-      
-      <th>Monthly %</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody id="tableBody">
-    <!-- Rows will be added by JS -->
-  </tbody>
-</table>
-
-<script>
-  const students = ["kalyani", "Rubina", "Vyshnavi", "Chetana","Pranitha","Tejaswini","Pooja"];
-  const dates = ["Date 1", "Date 2", "Date 3", "Date 4","Date 5"];
+  const students = ["kalyani", "teju", "vyshnavi", "pooja", "rubina","chetana","pranitha"];
+  const dates = ["Date 1", "Date 2", "Date 3", "Date 4"];
   const tableBody = document.getElementById("tableBody");
 
   function createInput(cell, studentIndex) {
@@ -78,7 +39,7 @@
 
     const percentCell = row.cells[dates.length + 1];
     const percentage = ((presentCount / total) * 100).toFixed(0);
-    percentCell.textContent = `${percentage}% (${presentCount} / ${total})`;
+    percentCell.textContent = `${percentage}%`;
   }
 
   function renderStudent(name) {
@@ -91,7 +52,7 @@
       createInput(row.insertCell(), index);
     }
 
-    row.insertCell().textContent = "0% (0 / " + dates.length + ")"; // Percentage cell
+    row.insertCell().textContent = "0%"; // Percentage cell
 
     // Action Cell
     const actionCell = row.insertCell();
@@ -125,7 +86,3 @@
 
   // Initial render
   students.forEach(renderStudent);
-</script>
-
-</body>
-</html>
