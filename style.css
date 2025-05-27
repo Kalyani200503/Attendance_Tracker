@@ -19,24 +19,7 @@ body {
       border: 1px solid #1f1c1c;
       padding: 10px;
     }
-    .present {
-      background-color: #2acd2a;
-      text-align: center;
-      border: 1px solid black;
-      border-radius: 20px;
-    }
-    .absent {
-      background-color: #de0d0d;
-      text-align: center;
-      border: 1px solid black;
-      border-radius: 20px;
-    }
-    .late {
-      background-color: #e5d00e;
-      text-align: center;
-       border: 1px solid black;
-      border-radius: 20px;
-    }
+    
     input[type="text"] {
       padding: 6px;
       margin-right: 8px;
