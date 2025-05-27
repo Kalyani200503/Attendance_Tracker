@@ -1,47 +1,57 @@
 body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      justify-content: center;
-      text-align: center;
-    }
-    table {
-      width: 100%;
-      border: 5px solid black;
-      text-align: center;
-      border-radius: 5px;
-    }
-    th, td {
-
-      border: 1px solid #1f1c1c;
-      padding: 10px;
-    }
-    
-    input[type="text"] {
-      padding: 6px;
-      margin-right: 8px;
-     
-    }
-    button {
-      padding: 6px 12px;
-      cursor: pointer;
-    }
-    .delete-btn {
-      background-color: #ff4d4d;
-      color: white;
-      border: none;
-      padding: 5px 8px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    tr{
-      background-color: rgb(103, 166, 186);
-    }
-    th{
-      background-color:  rgb(41, 89, 222) !important;
-    }
-
-   
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border: 3px solid black;
+  text-align: center;
+}
+th,
+td {
+  border: 1px solid #1f1c1c;
+  padding: 10px;
+}
+.present {
+  background-color: #2acd2a;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.absent {
+  background-color: #de0d0d;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.late {
+  background-color: #e5d00e;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+input[type="text"] {
+  padding: 6px;
+  margin-right: 8px;
+}
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: #663232;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+tr {
+  background-color: rgb(246, 246, 248);
+}
