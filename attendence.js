@@ -1,8 +1,8 @@
-
+//creating ArrayList
   const students = ["kalyani", "teju", "vyshnavi", "pooja", "rubina","chetana","pranitha"];
   const dates = ["Date 1", "Date 2", "Date 3", "Date 4"];
   const tableBody = document.getElementById("tableBody");
-
+ // Set color and about buttons
   function createInput(cell, studentIndex) {
     const input = document.createElement("input");
     input.maxLength = 1;
@@ -11,7 +11,7 @@
       const value = input.value.toUpperCase();
       input.value = value;
 
-      // Set color
+     
       input.className = "";
       if (value === "P") input.classList.add("present");
       else if (value === "A") input.classList.add("absent");
@@ -22,6 +22,7 @@
     cell.appendChild(input);
   }
 
+  //percentage
   function calculatePercentage(studentIndex) {
     const row = tableBody.children[studentIndex];
     let presentCount = 0;
