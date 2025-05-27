@@ -7,6 +7,7 @@ function createInput(cell, studentIndex) {
   const input = document.createElement("input");
   input.maxLength = 1;
   input.style.width = "30px";
+  input.style.textAlign="center"
   input.addEventListener("input", () => {
     const value = input.value.toUpperCase();
     input.value = value;
