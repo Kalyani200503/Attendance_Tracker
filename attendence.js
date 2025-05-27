@@ -55,7 +55,7 @@
 
     row.insertCell().textContent = "0%"; // Percentage cell
 
-    // Action Cell
+    // Action Cell ,buttons
     const actionCell = row.insertCell();
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
@@ -66,7 +66,7 @@
     };
     actionCell.appendChild(deleteBtn);
   }
-
+// adding list
   function addStudent() {
     const nameInput = document.getElementById("studentNameInput");
     const name = nameInput.value.trim();
@@ -78,7 +78,7 @@
       alert("Please enter a valid student name.");
     }
   }
-
+//percentage
   function updateAllPercentages() {
     for (let i = 0; i < tableBody.rows.length; i++) {
       calculatePercentage(i);
